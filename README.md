@@ -18,6 +18,10 @@ AWS_STATIC_PREFIX=static
 AWS_STATIC_SOURCE_DIRECTORY=public
 ```
 
+Assets are uploaded to sub-folders with the current date on S3. If you rather
+want files to be uploaded directly to the static root folder, set
+`AWS_STATIC_DESTINATION_TYPE=STATIC_ROOT`.
+
 # Exported Environment Variables to Runtime
 
 ```sh
