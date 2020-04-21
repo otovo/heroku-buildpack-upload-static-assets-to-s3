@@ -5,7 +5,9 @@ Uploads static assets to S3 when building Heroku apps.
 Requires the NodeJS buildpack to be installed. `https://github.com/heroku/heroku-buildpack-nodejs`
 
 
-# Setting Mandatory Environment Variables for Build
+# Environment Variables for Build
+
+The following variables are required:
 
 ```
 AWS_ACCESS_KEY_ID=<aws access key id>
