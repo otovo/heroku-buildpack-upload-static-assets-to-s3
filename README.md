@@ -21,23 +21,3 @@ AWS_STATIC_SOURCE_DIRECTORY=public
 Assets are uploaded to sub-folders with the current date on S3. If you rather
 want files to be uploaded directly to the static root folder, set
 `AWS_STATIC_DESTINATION_TYPE=STATIC_ROOT`.
-
-# Exported Environment Variables to Runtime
-
-```sh
-STATIC_SERVER=<AWS_STATIC_BUCKET_NAME>.s3.amazonaws.com
-STATIC_PATH=/<AWS_STATIC_PREFIX>/<YYYY-MM-DD>/<git-commit-sha1>
-```
-
-These variables can be overriden with config vars as expected
-
-```
-heroku config:set STATIC_SERVER=your.cdn.host
-```
-
-To return to the default value just unset the config vars
-
-```
-heroku config:unset STATIC_SERVER
-```
-
